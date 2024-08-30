@@ -3,10 +3,14 @@ import plotly.graph_objs as go
 import streamlit as st
 
 st.header('Analysis of Auto Sales in the U.S.')
-st.subheader("Q. When did America's love affair with SUV's and Pick-up Truck's take off?")
+st.subheader("Q. When did America's love affair with SUVs and Pick-up Trucks take off?")
 
 #Load data
 data = pd.read_csv('https://github.com/mike-ua/Streamlit-Data/blob/3ecf48e67e9a15e5fa57e8a11a734426c3aa10de/LightTruck_Auto_Sales.csv?raw=true')
+
+st.text("Light Trucks = Pickup trucks, SUVs, minivans, vans, crossovers, some small commercial vehicles")
+st.text("Passenger Cars = sedans, coupes, convertibles, hatchbacks, station wagons")
+
 
 #Create traces for the SAAR of each category
 trace1 = go.Scatter(x=data['Date'], y=data['Light_Truck'], 
