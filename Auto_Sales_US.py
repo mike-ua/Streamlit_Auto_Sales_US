@@ -8,7 +8,7 @@ st.subheader("Q. When did America's love affair with SUVs and Pick-up Trucks tak
 #Load data
 data = pd.read_csv('https://github.com/mike-ua/Streamlit-Data/blob/3ecf48e67e9a15e5fa57e8a11a734426c3aa10de/LightTruck_Auto_Sales.csv?raw=true')
 
-st.text("Light Trucks = Pickup trucks, SUVs, minivans, vans, crossovers, some small commercial vehicles")
+st.text("Light Trucks = Pickup trucks, SUVs, minivans, vans, crossovers")
 st.text("Passenger Cars = sedans, coupes, convertibles, hatchbacks, station wagons")
 
 
